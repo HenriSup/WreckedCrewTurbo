@@ -1,0 +1,79 @@
+{
+  "nextEntryId": 12,
+  "nodes": [
+    {
+      "id": "8",
+      "name": "Scenes",
+      "type": null,
+      "children": [
+        {
+          "id": "9",
+          "name": "DebugScene",
+          "type": "scene"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Behaviors",
+      "type": null,
+      "children": [
+        {
+          "id": "5",
+          "name": "CarBehavior",
+          "type": "script"
+        }
+      ]
+    },
+    {
+      "id": "0",
+      "name": "Sprites",
+      "type": null,
+      "children": [
+        {
+          "id": "1",
+          "name": "Backgrounds",
+          "type": null,
+          "children": [
+            {
+              "id": "7",
+              "name": "DebugBackground",
+              "type": "sprite"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "name": "Objects",
+          "type": null,
+          "children": [
+            {
+              "id": "2",
+              "name": "Cars",
+              "type": null,
+              "children": [
+                {
+                  "id": "6",
+                  "name": "Car",
+                  "type": "sprite"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Prefabs",
+      "type": null,
+      "children": [
+        {
+          "id": "11",
+          "name": "Car",
+          "type": "scene"
+        }
+      ]
+    }
+  ]
+}
