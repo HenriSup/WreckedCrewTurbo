@@ -1,5 +1,5 @@
 {
-  "nextEntryId": 17,
+  "nextEntryId": 20,
   "nodes": [
     {
       "id": "8",
@@ -58,9 +58,21 @@
               "type": null,
               "children": [
                 {
-                  "id": "6",
-                  "name": "Car",
-                  "type": "sprite"
+                  "id": "17",
+                  "name": "Car1",
+                  "type": null,
+                  "children": [
+                    {
+                      "id": "18",
+                      "name": "Chassis",
+                      "type": "sprite"
+                    },
+                    {
+                      "id": "19",
+                      "name": "Wheel",
+                      "type": "sprite"
+                    }
+                  ]
                 }
               ]
             }

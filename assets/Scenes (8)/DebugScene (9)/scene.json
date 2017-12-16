@@ -12,7 +12,7 @@
             "formatVersion": 1,
             "mode": "orthographic",
             "fov": 45,
-            "orthographicScale": 50,
+            "orthographicScale": 25,
             "viewport": {
               "x": 0,
               "y": 0,
@@ -101,7 +101,7 @@
       "position": {
         "x": 0,
         "y": 0,
-        "z": 1
+        "z": 2
       },
       "orientation": {
         "x": 0,
