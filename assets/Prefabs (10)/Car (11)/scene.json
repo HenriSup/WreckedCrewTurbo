@@ -33,26 +33,21 @@
           "id": "1"
         },
         {
-          "type": "ArcadeBody2D",
+          "type": "P2Body",
           "config": {
             "formatVersion": 2,
-            "type": "box",
-            "movable": true,
-            "width": 5,
-            "height": 3,
-            "offset": {
-              "x": 0,
-              "y": 0
-            },
-            "bounce": {
-              "x": 0,
-              "y": 0
-            },
-            "tileMapAssetId": null,
-            "tileSetPropertyName": null,
-            "layersIndex": null
+            "mass": 1,
+            "fixedRotation": false,
+            "offsetX": 0,
+            "offsetY": 0,
+            "shape": "box",
+            "width": 2.5,
+            "height": 4.5,
+            "angle": 0,
+            "radius": 1,
+            "length": 1
           },
-          "id": "3"
+          "id": "5"
         }
       ],
       "position": {

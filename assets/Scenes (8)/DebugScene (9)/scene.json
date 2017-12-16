@@ -12,18 +12,26 @@
             "formatVersion": 1,
             "mode": "orthographic",
             "fov": 45,
-            "orthographicScale": 10,
+            "orthographicScale": 50,
             "viewport": {
               "x": 0,
               "y": 0,
               "width": 1,
               "height": 1
             },
-            "depth": 0,
-            "nearClippingPlane": 0.1,
+            "depth": 3,
+            "nearClippingPlane": 1,
             "farClippingPlane": 1000
           },
           "id": "0"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "CameraBehavior",
+            "propertyValues": {}
+          },
+          "id": "1"
         }
       ],
       "position": {
@@ -52,22 +60,17 @@
       "children": [],
       "components": [
         {
-          "type": "SpriteRenderer",
+          "type": "TileMapRenderer",
           "config": {
             "formatVersion": 1,
-            "spriteAssetId": "7",
-            "animationId": null,
-            "horizontalFlip": false,
-            "verticalFlip": false,
+            "tileMapAssetId": "15",
+            "tileSetAssetId": null,
             "castShadow": false,
             "receiveShadow": false,
-            "color": "ffffff",
-            "overrideOpacity": false,
-            "opacity": null,
             "materialType": "basic",
             "shaderAssetId": null
           },
-          "id": "0"
+          "id": "1"
         }
       ],
       "position": {

@@ -1,5 +1,5 @@
 {
-  "nextEntryId": 12,
+  "nextEntryId": 17,
   "nodes": [
     {
       "id": "8",
@@ -21,6 +21,11 @@
         {
           "id": "5",
           "name": "CarBehavior",
+          "type": "script"
+        },
+        {
+          "id": "16",
+          "name": "CameraBehavior",
           "type": "script"
         }
       ]
@@ -58,6 +63,30 @@
                   "type": "sprite"
                 }
               ]
+            }
+          ]
+        },
+        {
+          "id": "12",
+          "name": "Tiles",
+          "type": null,
+          "children": [
+            {
+              "id": "13",
+              "name": "SandTiles",
+              "type": "tileSet"
+            }
+          ]
+        },
+        {
+          "id": "14",
+          "name": "Map",
+          "type": null,
+          "children": [
+            {
+              "id": "15",
+              "name": "Desert",
+              "type": "tileMap"
             }
           ]
         }
