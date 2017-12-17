@@ -20,7 +20,7 @@ class CarBehavior extends Sup.Behavior {
     var maxSteer = Math.PI / 4;
     
     this.vehicle.wheels[0].steerValue = maxSteer * (Number(left) - Number(right));
-    this.turnWheel(this.vehicle.wheels[0].steerValue);
+
     
     // Engine force forward
     this.vehicle.wheels[1].engineForce = Number(forward) * 17;
@@ -36,6 +36,9 @@ class CarBehavior extends Sup.Behavior {
             this.vehicle.wheels[1].engineForce = -4;
         }
     }
+    
+    this.turnWheel(this.vehicle.wheels[0].steerValue);
+    this.animateWheel(this.vehicle.wheels[1].getSpeed(),this.vehicle.wheels[0].getSpeed());
   }
   
   private initCar(world):p2.TopDownVehicle{
@@ -61,11 +64,33 @@ class CarBehavior extends Sup.Behavior {
   private turnWheel(angle){
     var frontWheels = this.actor.getChild("FrontWheels").getChildren();
     let lerp = 0.10;
+
     frontWheels.forEach(frontwheel =>{
       var actualAngle = frontwheel.getLocalEulerZ()
       var newAngle = Sup.Math.lerpAngle(actualAngle,angle,lerp);
       frontwheel.setLocalEulerZ(newAngle);
     })
+  }
+  
+  private animateWheel(frontWheelSpeed,backWheelSpeed){
+    var frontWheels:Sup.Actor[] = this.actor.getChild("FrontWheels").getChildren();
+    var backWheels:Sup.Actor[] = this.actor.getChild("BackWheels").getChildren();
+    let maxFrameRate = 15;
+    
+    frontWheelSpeed = Math.min(Math.floor(frontWheelSpeed),maxFrameRate);
+    frontWheels.forEach(frontwheel=>{
+      var spriteRenderer = frontwheel.spriteRenderer;
+      spriteRenderer.setPlaybackSpeed(frontWheelSpeed);
+      spriteRenderer.getPlaybackSpeed();
+    })
+    
+    backWheelSpeed = Math.min(Math.floor(backWheelSpeed),maxFrameRate);
+    backWheels.forEach(backwheel=>{
+      var spriteRenderer = backwheel.spriteRenderer;
+      spriteRenderer.setPlaybackSpeed(frontWheelSpeed);
+      spriteRenderer.getPlaybackSpeed();
+    })
+   
   }
   
 
