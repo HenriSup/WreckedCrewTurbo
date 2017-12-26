@@ -63,7 +63,7 @@
                   "config": {
                     "formatVersion": 1,
                     "spriteAssetId": "19",
-                    "animationId": "0",
+                    "animationId": "1",
                     "horizontalFlip": false,
                     "verticalFlip": false,
                     "castShadow": false,
@@ -107,8 +107,8 @@
                   "config": {
                     "formatVersion": 1,
                     "spriteAssetId": "19",
-                    "animationId": "0",
-                    "horizontalFlip": false,
+                    "animationId": "1",
+                    "horizontalFlip": true,
                     "verticalFlip": false,
                     "castShadow": false,
                     "receiveShadow": false,
@@ -170,14 +170,42 @@
             {
               "id": "7",
               "name": "LeftWheel",
-              "children": [],
+              "children": [
+                {
+                  "id": "9",
+                  "name": "DustParticleGenerator",
+                  "children": [],
+                  "components": [],
+                  "position": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -1
+                  },
+                  "orientation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 1,
+                    "w": 6.123233995736766e-17
+                  },
+                  "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                  },
+                  "visible": true,
+                  "layer": 0,
+                  "prefab": {
+                    "sceneAssetId": "25"
+                  }
+                }
+              ],
               "components": [
                 {
                   "type": "SpriteRenderer",
                   "config": {
                     "formatVersion": 1,
                     "spriteAssetId": "19",
-                    "animationId": "0",
+                    "animationId": "1",
                     "horizontalFlip": false,
                     "verticalFlip": false,
                     "castShadow": false,
@@ -214,15 +242,43 @@
             {
               "id": "8",
               "name": "RightWheel",
-              "children": [],
+              "children": [
+                {
+                  "id": "10",
+                  "name": "DustParticleGenerator",
+                  "children": [],
+                  "components": [],
+                  "position": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -1
+                  },
+                  "orientation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 1,
+                    "w": 6.123234262925839e-17
+                  },
+                  "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                  },
+                  "visible": true,
+                  "layer": 0,
+                  "prefab": {
+                    "sceneAssetId": "25"
+                  }
+                }
+              ],
               "components": [
                 {
                   "type": "SpriteRenderer",
                   "config": {
                     "formatVersion": 1,
                     "spriteAssetId": "19",
-                    "animationId": "0",
-                    "horizontalFlip": false,
+                    "animationId": "1",
+                    "horizontalFlip": true,
                     "verticalFlip": false,
                     "castShadow": false,
                     "receiveShadow": false,
@@ -256,7 +312,16 @@
               "prefab": null
             }
           ],
-          "components": [],
+          "components": [
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "",
+                "propertyValues": {}
+              },
+              "id": "0"
+            }
+          ],
           "position": {
             "x": 0,
             "y": -1.2,

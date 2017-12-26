@@ -11,6 +11,12 @@
       "line": 0,
       "parentBehavior": null,
       "properties": []
+    },
+    "ParticleGeneratorBehavior": {
+      "scriptId": "22",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
     }
   }
 }

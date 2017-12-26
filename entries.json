@@ -1,5 +1,5 @@
 {
-  "nextEntryId": 20,
+  "nextEntryId": 30,
   "nodes": [
     {
       "id": "8",
@@ -19,14 +19,33 @@
       "type": null,
       "children": [
         {
-          "id": "5",
-          "name": "CarBehavior",
-          "type": "script"
+          "id": "20",
+          "name": "Objects",
+          "type": null,
+          "children": [
+            {
+              "id": "5",
+              "name": "CarBehavior",
+              "type": "script"
+            },
+            {
+              "id": "16",
+              "name": "CameraBehavior",
+              "type": "script"
+            }
+          ]
         },
         {
-          "id": "16",
-          "name": "CameraBehavior",
-          "type": "script"
+          "id": "21",
+          "name": "Fx",
+          "type": null,
+          "children": [
+            {
+              "id": "22",
+              "name": "particleGeneratorBehavior",
+              "type": "script"
+            }
+          ]
         }
       ]
     },
@@ -101,6 +120,23 @@
               "type": "tileMap"
             }
           ]
+        },
+        {
+          "id": "26",
+          "name": "Fx",
+          "type": null,
+          "children": [
+            {
+              "id": "27",
+              "name": "particleGeneratorDebugger",
+              "type": "sprite"
+            },
+            {
+              "id": "29",
+              "name": "particleDebugger",
+              "type": "sprite"
+            }
+          ]
         }
       ]
     },
@@ -110,9 +146,33 @@
       "type": null,
       "children": [
         {
-          "id": "11",
-          "name": "Car",
-          "type": "scene"
+          "id": "23",
+          "name": "Fx",
+          "type": null,
+          "children": [
+            {
+              "id": "25",
+              "name": "ParticleGenerator",
+              "type": "scene"
+            },
+            {
+              "id": "28",
+              "name": "ParticlePrefab",
+              "type": "scene"
+            }
+          ]
+        },
+        {
+          "id": "24",
+          "name": "Objects",
+          "type": null,
+          "children": [
+            {
+              "id": "11",
+              "name": "Car",
+              "type": "scene"
+            }
+          ]
         }
       ]
     }

@@ -48,7 +48,7 @@ class CarBehavior extends Sup.Behavior {
     var car = new p2.TopDownVehicle(chassisBody);
     
     var frontWheel = car.addWheel({
-      localPosition: [0,2.25 ] // frontWheel
+      localPosition: [0,2.25] // frontWheel
     });
     frontWheel.setSideFriction(15);
 

@@ -5,28 +5,20 @@
   ],
   "filtering": "pixelated",
   "wrapping": "clampToEdge",
-  "pixelsPerUnit": 20,
-  "framesPerSecond": 1,
+  "pixelsPerUnit": 100,
+  "framesPerSecond": 10,
   "opacity": null,
   "alphaTest": 0.1,
   "frameOrder": "rows",
   "grid": {
-    "width": 32,
-    "height": 32
+    "width": 20,
+    "height": 20
   },
   "origin": {
     "x": 0.5,
     "y": 0.5
   },
-  "animations": [
-    {
-      "id": "1",
-      "name": "Turning",
-      "startFrameIndex": 0,
-      "endFrameIndex": 1,
-      "speed": 2
-    }
-  ],
+  "animations": [],
   "mapSlots": {
     "map": "map",
     "light": null,
