@@ -154,11 +154,6 @@
               "id": "25",
               "name": "ParticleGenerator",
               "type": "scene"
-            },
-            {
-              "id": "28",
-              "name": "ParticlePrefab",
-              "type": "scene"
             }
           ]
         },

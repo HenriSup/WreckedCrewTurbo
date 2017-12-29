@@ -312,16 +312,7 @@
               "prefab": null
             }
           ],
-          "components": [
-            {
-              "type": "Behavior",
-              "config": {
-                "behaviorName": "",
-                "propertyValues": {}
-              },
-              "id": "0"
-            }
-          ],
+          "components": [],
           "position": {
             "x": 0,
             "y": -1.2,
