@@ -28,7 +28,7 @@ class ParticleGeneratorBehavior extends Sup.Behavior {
     
     if ((this.frameCounter % this.frameBetweenParticles) == 0){
       //deleted so it wont show
-      //this.instantiateParticle();
+      this.instantiateParticle();
     }  
  
     
